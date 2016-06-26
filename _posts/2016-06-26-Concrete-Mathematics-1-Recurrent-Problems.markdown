@@ -8,11 +8,10 @@ categories: "Concrete Mathematics"
 
 ##  1.16 four-parameter recurrence
 
-
 $$
 \begin{align}
  g(1) & =\alpha\\
- g(2n+j) & =3g(n)+{\gamma}n+\beta_j;j=0,1,n>=1\\
+ g(2n+j) & =3g(n)+{\gamma}n+\beta_j;j=0,1,n\ge1\\
 \end{align}
 $$
 
@@ -56,3 +55,27 @@ $$
 		  -\gamma(1b_{m-1}b_{m-2}...b_{1}b_{0})_2\\
 \end{align}
 $$
+
+
+## 1.19 Is it possible to obtain $$Z_n$$, regions with $$n$$ bent lines when the angle at each zig is $$30^{\circ}$$?
+
+### Solution:
+
+Assume that we can obtain $$Z_n$$ regions from $$n$$ bent lines, where the $$$$th bent line which consists of a $$\theta_i$$ degree half-line and a $$\theta_i+30^{\circ}$$ degree half-line ($$1\le{i}\le{n}$$).
+
+There are 4 intersection points between $$i$$th and $$j$$th bent lines,if and only if 
+$$30^{\circ} \lt | {\theta_i - \theta_j} | \lt 150^{\circ}, (i\ne j)$$.
+
+Let $$\theta_1 \lt \theta_2 \lt ... \lt \theta_n$$, thus we have
+
+$$
+\begin{align}
+30^{\circ} &\lt  {\theta_2 - \theta_1}  &\lt 150^{\circ}\\
+30^{\circ} &\lt  {\theta_3 - \theta_2}  &\lt 150^{\circ}\\
+&...  &... \\
+30^{\circ} &\lt  {\theta_n - \theta_{n-1}} &\lt 150^{\circ}\\
+
+\end{align}
+$$
+
+Hence, $$30^{\circ}(n-1) \lt  {\theta_n - \theta_{1}} \lt 150^{\circ}$$. So we get $$n \lt 6$$.
